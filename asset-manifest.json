@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/blessed/static/js/main.3189937d.js",
+    "static/media/hero.mp4": "/blessed/static/media/hero.a6725b279cd73dfec0c6.mp4",
+    "index.html": "/blessed/index.html",
+    "main.3189937d.js.map": "/blessed/static/js/main.3189937d.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.3189937d.js"
+  ]
+}
