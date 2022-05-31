@@ -21,8 +21,9 @@ const Hero = () => {
         </HeroVideo>
         <HeroVideoOverlay />
         <HeroVideoText>
+          <p>Blessed Eventos</p>
           <h1>
-            Transformamos <span>experiências</span> incríveis em memórias{' '}
+            Transformando <span>experiências</span> em memórias{' '}
             <span>inesquecíveis</span>
           </h1>
         </HeroVideoText>

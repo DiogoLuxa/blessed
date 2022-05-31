@@ -26,7 +26,7 @@ const Navbar = () => {
     <NavbarStyled>
       <NavContainer>
         <NavLogo to="/">
-          Logo
+          Blessed
           {/* <NavLogoImg img={logo}></NavLogoImg> */}
         </NavLogo>
         <Burger onClick={() => setIsOpen((prev) => !prev)}>
