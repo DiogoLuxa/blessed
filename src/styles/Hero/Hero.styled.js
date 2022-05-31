@@ -40,6 +40,13 @@ export const HeroVideoText = styled.div`
   transform: translateX(50%);
   text-align: left;
 
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+    left: 11%;
+    right: 9%;
+    transform: translateX(0%);
+  }
+
   span {
     font-weight: 400;
     color: #ffdeb3;

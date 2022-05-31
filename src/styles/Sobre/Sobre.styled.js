@@ -30,15 +30,13 @@ export const SobreFirstColumn = styled.div`
   p {
     font-size: 2rem;
     font-weight: 200;
-
-    @media screen and (max-width: 768px) {
-      /* font-size: 1.8rem; */
-    }
   }
 `;
 
 export const SobreSecondColumn = styled.div`
   img {
     width: 100%;
+    position: relative;
+    box-shadow: -5px 10px 10px 0px hsla(0, 0%, 0%, 0.05);
   }
 `;
