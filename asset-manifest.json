@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/blessed/static/js/main.9aaccc4b.js",
-    "static/media/hero.mp4": "/blessed/static/media/hero.a6725b279cd73dfec0c6.mp4",
+    "main.js": "/blessed/static/js/main.acade4d7.js",
+    "static/media/hero.mp4": "/blessed/static/media/hero.061259bc405c6c35cd94.mp4",
     "index.html": "/blessed/index.html",
-    "main.9aaccc4b.js.map": "/blessed/static/js/main.9aaccc4b.js.map"
+    "main.acade4d7.js.map": "/blessed/static/js/main.acade4d7.js.map"
   },
   "entrypoints": [
-    "static/js/main.9aaccc4b.js"
+    "static/js/main.acade4d7.js"
   ]
 }
