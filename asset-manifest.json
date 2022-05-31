@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/blessed/static/js/main.b5e9d8ea.js",
+    "main.js": "/blessed/static/js/main.ec6709ce.js",
     "static/media/hero.mp4": "/blessed/static/media/hero.061259bc405c6c35cd94.mp4",
     "static/media/modelos-1.png": "/blessed/static/media/modelos-1.bad35bc957c07b3ad521.png",
     "index.html": "/blessed/index.html",
-    "main.b5e9d8ea.js.map": "/blessed/static/js/main.b5e9d8ea.js.map"
+    "main.ec6709ce.js.map": "/blessed/static/js/main.ec6709ce.js.map"
   },
   "entrypoints": [
-    "static/js/main.b5e9d8ea.js"
+    "static/js/main.ec6709ce.js"
   ]
 }
