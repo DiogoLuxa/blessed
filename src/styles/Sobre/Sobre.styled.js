@@ -8,7 +8,7 @@ export const SobreStyled = styled.section`
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    padding: 7rem 0;
+    padding: 9rem 0;
     grid-template-columns: 1fr;
   }
 `;

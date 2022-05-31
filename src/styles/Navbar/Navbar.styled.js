@@ -5,13 +5,21 @@ import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 export const NavbarStyled = styled.nav`
-  background-color: var(--platinum);
+  position: fixed;
+  width: 100%;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
   z-index: 10;
+  transition: all 0.5s ease-in-out;
+  ${(props) => {
+    if (props.onPageScroll) {
+      return css`
+        background-color: hsla(0, 0%, 90%, 1);
+      `;
+    }
+  }}
 `;
 
 export const NavContainer = styled.div`
@@ -24,11 +32,19 @@ export const NavContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: var(--dark-slate-gray);
+  color: var(--platinum);
   text-decoration: none;
   font-size: 2rem;
   font-weight: bolder;
   text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  ${(props) => {
+    if (props.onPageScroll) {
+      return css`
+        color: var(--dark-slate-gray);
+      `;
+    }
+  }}
 `;
 
 export const NavLogoImg = styled.div`
@@ -58,8 +74,16 @@ export const Line = styled.div`
     display: block;
     width: 100%;
     height: 5px;
-    background-color: var(--dark-slate-gray);
     border-radius: 10px;
+    background-color: var(--platinum);
+
+    ${(props) => {
+      if (props.onPageScroll) {
+        return css`
+          background-color: var(--dark-slate-gray);
+        `;
+      }
+    }}
     ${(props) => {
       if (props.isOpen && props.position === 'primeira') {
         return css`
@@ -98,8 +122,24 @@ export const NavLink = styled(LinkS)`
   display: flex;
   align-items: center;
   font-weight: 500;
+  color: var(--platinum);
+  ${(props) => {
+    if (props.onPageScroll) {
+      return css`
+        color: var(--dark-slate-gray);
+      `;
+    }
+  }}
 
   &.active {
-    border-bottom: 5px solid var(--dark-slate-gray);
+    border-bottom: 5px solid var(--platinum);
+
+    ${(props) => {
+      if (props.onPageScroll) {
+        return css`
+          border-bottom: 5px solid var(--dark-slate-gray);
+        `;
+      }
+    }}
   }
 `;

@@ -1,20 +1,20 @@
 import styled from 'styled-components';
 
 // router
-import { Link as LinkR } from 'react-router-dom';
+// import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 export const SidebarStyled = styled.aside`
   width: 100%;
   height: 70vh;
-  padding: 5.5rem 2rem;
+  padding: 9rem 2rem 5rem 2rem;
   background-color: var(--dark-slate-gray);
   color: var(--platinum);
   position: fixed;
   font-size: 2rem;
   text-transform: uppercase;
   opacity: ${(props) => (props.isOpen ? '100%' : '0')};
-  top: ${(props) => (props.isOpen ? '80px' : '-100%')};
+  top: ${(props) => (props.isOpen ? '0' : '-100%')};
   transition: all 0.5s ease-in-out;
   z-index: 9;
 `;
@@ -46,8 +46,4 @@ export const SidebarItem = styled.li`
 
 export const SidebarLink = styled(LinkS)`
   cursor: pointer;
-
-  &:hover {
-    color: #f2e45c;
-  }
 `;

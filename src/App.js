@@ -8,6 +8,7 @@ import Sobre from './components/Sobre/Sobre';
 import GlobalStyle from './styles/GlobalStyle';
 import AppStyled from './styles/App.styled';
 import Container from './styles/Container';
+import Atuacao from './components/Atuação/Atuacao';
 
 function App() {
   return (
@@ -16,10 +17,10 @@ function App() {
       <Navbar />
       <Sidebar />
       <Hero />
-
       <Container>
         <Sobre />
       </Container>
+      <Atuacao />
     </AppStyled>
   );
 }
