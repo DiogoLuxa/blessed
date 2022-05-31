@@ -17,7 +17,6 @@ const GlobalStyle = createGlobalStyle`
     }
     body {
         color: var(--dark-slate-gray);
-        /* background-color: var(--platinum); */
         font-size: 1.6rem;
         font-family: 'Open Sans', sans-serif;
     }

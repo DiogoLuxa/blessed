@@ -21,11 +21,11 @@ export const HeroVideoOverlay = styled.div`
   top: 0;
   width: 100%;
   height: 100%;
-  color: azure;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: azure;
   background-color: hsla(0, 0%, 0%, 0.6);
 `;
 
@@ -42,20 +42,29 @@ export const HeroVideoText = styled.div`
 
   span {
     font-weight: 400;
-    color: hsla(49, 82%, 89%, 1);
+    color: var(--blanched-almond);
   }
 
   p {
+    align-self: flex-start;
+    position: relative;
     font-size: 3.5rem;
     font-weight: 100;
-    border-bottom: 2px solid #ffc5a7;
-    padding-left: 1rem;
-    padding-bottom: 0.5rem;
-    align-self: flex-start;
-    color: #ffc5a7;
-    margin-bottom: 1.5rem;
     font-style: italic;
+    border-bottom-width: 2px;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--platinum);
 
+    &::after {
+      content: '';
+      width: 60px;
+      height: 3px;
+      background-color: var(--platinum);
+      position: absolute;
+      bottom: -2px;
+      left: -10px;
+    }
     @media screen and (min-width: 375px) and (max-width: 414px) {
       font-size: 2rem;
     }
@@ -65,16 +74,16 @@ export const HeroVideoText = styled.div`
     }
   }
   h1 {
-    color: var(--platinum);
     font-size: 5rem;
     font-weight: bold;
+    padding: 1rem;
+    color: var(--platinum);
     background: linear-gradient(
       90deg,
       rgba(46, 71, 86, 0.9) 0%,
       rgba(46, 71, 86, 0) 100%
     );
     box-shadow: -20px 15px 1px 1px hsla(49, 82%, 89%, 0.5);
-    padding: 1rem;
 
     @media screen and (min-width: 375px) and (max-width: 414px) {
       font-size: 2.4rem;

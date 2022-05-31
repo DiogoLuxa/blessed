@@ -2,6 +2,7 @@
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import Hero from './components/Hero/Hero';
+import Sobre from './components/Sobre/Sobre';
 
 // styles
 import GlobalStyle from './styles/GlobalStyle';
@@ -15,7 +16,10 @@ function App() {
       <Navbar />
       <Sidebar />
       <Hero />
-      <Container></Container>
+
+      <Container>
+        <Sobre />
+      </Container>
     </AppStyled>
   );
 }

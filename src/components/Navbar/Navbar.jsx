@@ -3,9 +3,6 @@ import React, { useContext } from 'react';
 // context
 import { StateContext } from '../../context/StateProvider';
 
-// assets/images
-// import logo from './../../assets/images/logo.png';
-
 // styled
 import {
   NavbarStyled,
@@ -18,6 +15,9 @@ import {
   NavItem,
   NavLink,
 } from '../../styles/Navbar/Navbar.styled';
+
+// assets/images
+// import logo from './../../assets/images/logo.png';
 
 const Navbar = () => {
   const { isOpen, setIsOpen } = useContext(StateContext);
