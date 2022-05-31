@@ -16,7 +16,7 @@ export const SobreStyled = styled.section`
 export const SobreFirstColumn = styled.div`
   span {
     font-style: italic;
-    color: #ffbd66;
+    color: #ffb24d;
   }
   h1 {
     font-size: 5rem;
@@ -37,6 +37,5 @@ export const SobreSecondColumn = styled.div`
   img {
     width: 100%;
     position: relative;
-    box-shadow: -5px 10px 10px 0px hsla(0, 0%, 0%, 0.05);
   }
 `;
