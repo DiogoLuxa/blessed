@@ -42,7 +42,7 @@ export const HeroVideoText = styled.div`
 
   span {
     font-weight: 400;
-    color: var(--blanched-almond);
+    color: #ffdeb3;
   }
 
   p {
@@ -60,7 +60,7 @@ export const HeroVideoText = styled.div`
       content: '';
       width: 60px;
       height: 3px;
-      background-color: var(--platinum);
+      background-color: #ffc981;
       position: absolute;
       bottom: -2px;
       left: -10px;

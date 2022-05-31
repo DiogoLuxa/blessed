@@ -28,6 +28,7 @@ export const NavLogo = styled(LinkR)`
   text-decoration: none;
   font-size: 2rem;
   font-weight: bolder;
+  text-transform: uppercase;
 `;
 
 export const NavLogoImg = styled.div`
@@ -96,6 +97,7 @@ export const NavLink = styled(LinkS)`
   height: 80px;
   display: flex;
   align-items: center;
+  font-weight: 500;
 
   &.active {
     border-bottom: 5px solid var(--dark-slate-gray);
