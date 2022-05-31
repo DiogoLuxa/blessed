@@ -77,13 +77,11 @@ export const HeroVideoText = styled.div`
     padding: 1rem;
 
     @media screen and (min-width: 375px) and (max-width: 414px) {
-      font-size: 2.7rem;
-      /* text-align: left; */
+      font-size: 2.4rem;
     }
 
     @media screen and (min-width: 500px) and (max-width: 768px) {
       font-size: 4rem;
-      /* text-align: left; */
     }
   }
 `;
