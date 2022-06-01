@@ -1,12 +1,18 @@
 {
   "files": {
-    "main.js": "/blessed/static/js/main.cdc704d2.js",
+    "main.js": "/blessed/static/js/main.ba3afa03.js",
     "static/media/hero.mp4": "/blessed/static/media/hero.061259bc405c6c35cd94.mp4",
     "static/media/modelos-1.png": "/blessed/static/media/modelos-1.bad35bc957c07b3ad521.png",
+    "static/media/games.svg": "/blessed/static/media/games.faf69fe5aa3816918942a2a276a48b8b.svg",
+    "static/media/ticket.svg": "/blessed/static/media/ticket.bae2f14ea8fd7b9fbaaf661aa252c0e7.svg",
+    "static/media/burger.svg": "/blessed/static/media/burger.a212fb2c1b8b5bf89c1ab8f455cae6ff.svg",
     "index.html": "/blessed/index.html",
-    "main.cdc704d2.js.map": "/blessed/static/js/main.cdc704d2.js.map"
+    "static/media/work.svg": "/blessed/static/media/work.4c91f02b733398e4081397947a50839e.svg",
+    "static/media/fashion.svg": "/blessed/static/media/fashion.b4baf977c6f7d8ef636255045b317277.svg",
+    "static/media/glass.svg": "/blessed/static/media/glass.7920fa89b9035d9109b1f50b1e10338c.svg",
+    "main.ba3afa03.js.map": "/blessed/static/js/main.ba3afa03.js.map"
   },
   "entrypoints": [
-    "static/js/main.cdc704d2.js"
+    "static/js/main.ba3afa03.js"
   ]
 }
