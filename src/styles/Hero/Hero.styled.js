@@ -80,19 +80,19 @@ export const HeroVideoText = styled.div`
     }
   }
   h1 {
-    font-size: 5rem;
+    font-size: 5.5rem;
     font-weight: bold;
     padding: 1rem;
     color: var(--platinum);
-    background: linear-gradient(
+    /* background: linear-gradient(
       90deg,
       rgba(46, 71, 86, 0.9) 0%,
       rgba(46, 71, 86, 0) 100%
-    );
-    box-shadow: -20px 15px 1px 1px hsla(49, 82%, 89%, 0.5);
+    ); */
+    box-shadow: -20px 10px 1px 1px hsla(49, 82%, 89%, 0.5);
 
     @media screen and (min-width: 375px) and (max-width: 414px) {
-      font-size: 2.4rem;
+      font-size: 3rem;
     }
 
     @media screen and (min-width: 500px) and (max-width: 768px) {
