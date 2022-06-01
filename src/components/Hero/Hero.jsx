@@ -24,7 +24,7 @@ const Hero = () => {
           <p>Blessed Eventos</p>
           <h1>
             Transformando <span>experiências</span> em memórias{' '}
-            <span>inesquecíveis</span>
+            <span>inesquecíveis.</span>
           </h1>
         </HeroVideoText>
       </HeroVideoContainer>

@@ -16,7 +16,7 @@ export const SobreStyled = styled.section`
 export const SobreFirstColumn = styled.div`
   span {
     font-style: italic;
-    color: #ffb24d;
+    color: #deb887;
   }
   h1 {
     font-size: 5rem;

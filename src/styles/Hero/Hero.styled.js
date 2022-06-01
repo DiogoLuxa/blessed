@@ -89,7 +89,7 @@ export const HeroVideoText = styled.div`
       rgba(46, 71, 86, 0.9) 0%,
       rgba(46, 71, 86, 0) 100%
     ); */
-    box-shadow: -20px 10px 1px 1px hsla(49, 82%, 89%, 0.5);
+    box-shadow: -15px 1px 1px 0px hsla(49, 82%, 89%, 0.5);
 
     @media screen and (min-width: 375px) and (max-width: 414px) {
       font-size: 3rem;
