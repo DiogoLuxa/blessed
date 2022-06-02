@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import Hero from './components/Hero/Hero';
 import Sobre from './components/Sobre/Sobre';
+import Cases from './components/Cases/Cases';
 
 // styles
 import GlobalStyle from './styles/GlobalStyle';
@@ -21,6 +22,9 @@ function App() {
         <Sobre />
       </Container>
       <Atuacao />
+      <Container>
+        <Cases />
+      </Container>
     </AppStyled>
   );
 }

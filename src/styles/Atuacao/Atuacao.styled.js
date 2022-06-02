@@ -5,7 +5,6 @@ export const AtuacaoStyled = styled.section`
 `;
 
 export const AtuacaoContainer = styled.div`
-  /* background-color: salmon; */
   max-width: 1366px;
   margin: 0 auto;
   padding: 11rem 2rem;
@@ -21,7 +20,6 @@ export const AtuacaoContainer = styled.div`
 `;
 
 export const AtuacaoFirstColumn = styled.div`
-  /* background-color: blue; */
   grid-column-start: 2;
   display: flex;
   flex-direction: column;
@@ -47,7 +45,6 @@ export const AtuacaoFirstColumn = styled.div`
 `;
 
 export const AtuacaoSecondColumn = styled.div`
-  /* background-color: gold; */
   grid-column-start: 1;
   grid-row-start: 1;
 

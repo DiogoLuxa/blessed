@@ -7,7 +7,6 @@ import {
   AtuacaoFirstColumn,
   AtuacaoSecondColumn,
 } from '../../styles/Atuacao/Atuacao.styled';
-import Container from '../../styles/Container';
 
 // assets/images
 import glass from '../../assets/images/glass.svg';

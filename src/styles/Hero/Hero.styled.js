@@ -5,7 +5,6 @@ export const HeroStyled = styled.section``;
 export const HeroVideoContainer = styled.div`
   position: relative;
   height: 100vh;
-  /* height: calc(100vh - 80px); */
   overflow: hidden;
 `;
 
@@ -64,32 +63,43 @@ export const HeroVideoText = styled.div`
 
     &::after {
       content: '';
-      width: 60px;
+      width: 45px;
       height: 3px;
-      background-color: #ffc981;
+      background-color: #ffd166;
+      border-radius: 10px;
       position: absolute;
-      bottom: -2px;
-      left: -10px;
+      top: 5px;
+      left: 50px;
     }
     @media screen and (min-width: 375px) and (max-width: 414px) {
       font-size: 2rem;
+
+      &::after {
+        content: '';
+        width: 25px;
+        top: 0px;
+        left: 30px;
+      }
     }
 
     @media screen and (min-width: 500px) and (max-width: 768px) {
       font-size: 3rem;
+
+      &::after {
+        content: '';
+        width: 40px;
+        top: 0px;
+        left: 45px;
+      }
     }
   }
   h1 {
     font-size: 5.5rem;
     font-weight: bold;
-    padding: 1rem;
+    padding-left: 1.5rem;
     color: var(--platinum);
-    /* background: linear-gradient(
-      90deg,
-      rgba(46, 71, 86, 0.9) 0%,
-      rgba(46, 71, 86, 0) 100%
-    ); */
-    box-shadow: -15px 1px 1px 0px hsla(49, 82%, 89%, 0.5);
+    /* box-shadow: -15px 0px 0px 0px hsla(49, 82%, 89%, 0.5); */
+    border-left: 15px solid hsla(34, 100%, 85%, 0.5);
 
     @media screen and (min-width: 375px) and (max-width: 414px) {
       font-size: 3rem;

@@ -25,7 +25,6 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      console.log(window.scrollY);
       if (window.scrollY >= 100) {
         return setOnPageScroll((prev) => true);
       } else {
@@ -34,7 +33,6 @@ const Navbar = () => {
     });
   }, []);
 
-  console.log(onPageScroll);
   return (
     <NavbarStyled onPageScroll={onPageScroll}>
       <NavContainer>
