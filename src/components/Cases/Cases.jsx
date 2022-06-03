@@ -18,7 +18,7 @@ const Cases = () => {
       <CasesGridContainer>
         {fotosCases.map((item) => {
           return (
-            <CasesGridBox>
+            <CasesGridBox key={item.id}>
               <CasesGridImg src={item.url}>
                 <CasesGridOverlay />
               </CasesGridImg>

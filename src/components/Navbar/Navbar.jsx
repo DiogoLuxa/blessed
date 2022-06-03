@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <NavbarStyled onPageScroll={onPageScroll}>
       <NavContainer>
-        <NavLogo to="/" onPageScroll={onPageScroll}>
+        <NavLogo to="home" onPageScroll={onPageScroll}>
           Blessed
           {/* <NavLogoImg img={logo}></NavLogoImg> */}
         </NavLogo>

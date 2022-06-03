@@ -31,7 +31,8 @@ export const NavContainer = styled.div`
   padding: 0 2rem;
 `;
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled(LinkS)`
+  cursor: pointer;
   color: var(--platinum);
   text-decoration: none;
   font-size: 2rem;

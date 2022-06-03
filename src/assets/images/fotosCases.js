@@ -9,8 +9,8 @@ const fotosCases = [
   { id: 8, url: require('./Cases/12.jpg') },
   { id: 9, url: require('./Cases/13.jpg') },
   { id: 10, url: require('./Cases/25.png') },
-  { id: 12, url: require('./Cases/27.jpg') },
-  { id: 11, url: require('./Cases/26.jpg') },
+  { id: 11, url: require('./Cases/27.jpg') },
+  { id: 12, url: require('./Cases/26.jpg') },
 ];
 
 export default fotosCases;
