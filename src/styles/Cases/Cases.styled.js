@@ -14,7 +14,6 @@ export const CasesStyled = styled.section`
 `;
 
 export const CasesGridContainer = styled.div`
-  background-color: salmon;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
