@@ -15,14 +15,15 @@ import video from '../../assets/videos/hero.mp4';
 const Hero = () => {
   const videoElement = useRef();
 
-  useEffect(() => {
-    videoElement.current.play();
-  }, []);
+  // useEffect(() => {
+  //   videoElement.current.play();
+  // }, []);
   return (
     <HeroStyled id="home">
       <HeroVideoContainer>
         <HeroVideo
           ref={videoElement}
+          autoPlay
           loop
           muted
           src={video}

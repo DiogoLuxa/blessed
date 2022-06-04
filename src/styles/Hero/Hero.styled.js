@@ -12,6 +12,7 @@ export const HeroVideo = styled.video`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 1;
 `;
 
 export const HeroVideoOverlay = styled.div`
@@ -25,6 +26,7 @@ export const HeroVideoOverlay = styled.div`
   text-align: center;
   color: azure;
   background-color: hsla(0, 0%, 0%, 0.6);
+  z-index: 5;
 `;
 
 export const HeroVideoText = styled.div`
@@ -37,6 +39,7 @@ export const HeroVideoText = styled.div`
   justify-content: center;
   transform: translateX(50%);
   text-align: left;
+  z-index: 6;
 
   @media screen and (max-width: 1024px) {
     width: 80%;
