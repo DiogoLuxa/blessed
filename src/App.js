@@ -6,6 +6,7 @@ import Sobre from './components/Sobre/Sobre';
 import Atuacao from './components/Atuação/Atuacao';
 import Cases from './components/Cases/Cases';
 import Contato from './components/Contato/Contato';
+import Footer from './components/Footer/Footer';
 
 // styles
 import GlobalStyle from './styles/GlobalStyle';
@@ -27,6 +28,7 @@ function App() {
         <Cases />
         <Contato />
       </Container>
+      <Footer />
     </AppStyled>
   );
 }

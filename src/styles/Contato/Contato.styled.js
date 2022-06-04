@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContatoStyled = styled.section`
-  padding-bottom: 11rem;
+  padding: 11rem 0;
   h1 {
     font-size: 5rem;
     margin-bottom: 1rem;

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 
 // styles
 import {
@@ -13,16 +13,10 @@ import {
 import video from '../../assets/videos/hero.mp4';
 
 const Hero = () => {
-  const videoElement = useRef();
-
-  // useEffect(() => {
-  //   videoElement.current.play();
-  // }, []);
   return (
     <HeroStyled id="home">
       <HeroVideoContainer>
         <HeroVideo
-          ref={videoElement}
           autoPlay
           playsInline
           loop

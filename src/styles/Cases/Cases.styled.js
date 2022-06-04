@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const CasesStyled = styled.section`
-  padding: 11rem 0;
+  padding-top: 11rem;
   h1 {
     font-size: 5rem;
     margin-bottom: 1rem;
