@@ -24,6 +24,7 @@ const Hero = () => {
         <HeroVideo
           ref={videoElement}
           autoPlay
+          playsInline
           loop
           muted
           src={video}
