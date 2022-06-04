@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 
 // context
 import { StateContext } from '../../context/StateProvider';
@@ -23,15 +23,13 @@ const Navbar = () => {
   const { isOpen, setIsOpen, onPageScroll, setOnPageScroll } =
     useContext(StateContext);
 
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY >= 100) {
-        return setOnPageScroll((prev) => true);
-      } else {
-        return setOnPageScroll((prev) => false);
-      }
-    });
-  }, []);
+  window.addEventListener('scroll', () => {
+    if (window.scrollY >= 100) {
+      return setOnPageScroll(true);
+    } else {
+      return setOnPageScroll(false);
+    }
+  });
 
   return (
     <NavbarStyled onPageScroll={onPageScroll}>

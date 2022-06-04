@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 
 // styles
 import {
@@ -13,12 +13,22 @@ import {
 import video from '../../assets/videos/hero.mp4';
 
 const Hero = () => {
+  const videoElement = useRef();
+
+  useEffect(() => {
+    videoElement.current.play();
+  }, []);
   return (
     <HeroStyled id="home">
       <HeroVideoContainer>
-        <HeroVideo autoPlay loop muted>
-          <source src={video} type="video/mp4" />
-        </HeroVideo>
+        <HeroVideo
+          ref={videoElement}
+          loop
+          muted
+          src={video}
+          type="video/mp4"
+          preload="metadata"
+        />
         <HeroVideoOverlay />
         <HeroVideoText>
           <p>Blessed Eventos</p>
