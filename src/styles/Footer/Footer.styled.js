@@ -24,8 +24,10 @@ export const FooterContainer = styled.div`
   }
 `;
 
-export const FooterBrand = styled.div`
-  /* background-color: salmon; */
+export const FooterBrand = styled(LinkS)`
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: bold;
 `;
 
 export const FooterNav = styled.div`
@@ -40,6 +42,7 @@ export const FooterNav = styled.div`
 
 export const FooterLink = styled(LinkS)`
   cursor: pointer;
+  text-transform: capitalize;
 `;
 
 export const FooterSocials = styled.div`
@@ -50,5 +53,14 @@ export const FooterSocials = styled.div`
 
   @media screen and (max-width: 600px) {
     justify-content: flex-start;
+  }
+`;
+
+export const FooterCopyright = styled.div`
+  text-align: center;
+  padding-bottom: 2rem;
+  a {
+    color: #deb887;
+    text-decoration: none;
   }
 `;

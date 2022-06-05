@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+// context
+import { StateContext } from '../../context/StateProvider';
 
 // icons
 import { IconContext } from 'react-icons';
@@ -12,31 +15,59 @@ import {
   FooterNav,
   FooterLink,
   FooterSocials,
+  FooterCopyright,
 } from '../../styles/Footer/Footer.styled';
 
 const Footer = () => {
+  const { navItems, setNavItems } = useContext(StateContext);
+
+  const onLinkClick = (e) => {
+    const dataId = parseInt(e.target.getAttribute('data-id'));
+    if (dataId >= 0) {
+      setNavItems((prev) => {
+        const newState = prev.map((item) => {
+          if (item.id === dataId) {
+            return { ...item, active: true };
+          } else {
+            return { ...item, active: false };
+          }
+        });
+        return newState;
+      });
+    } else {
+      setNavItems((prev) => {
+        const newState = prev.map((item) => {
+          if (item.title === 'home') {
+            return { ...item, active: true };
+          } else {
+            return { ...item, active: false };
+          }
+        });
+        return newState;
+      });
+    }
+  };
+
   return (
     <FooterStyled>
       <FooterContainer>
-        <FooterBrand>
-          <h1>Blessed</h1>
+        <FooterBrand to="home" smooth={true} onClick={onLinkClick}>
+          Blessed
         </FooterBrand>
         <FooterNav>
-          <FooterLink to="home" className="nav-link">
-            Home
-          </FooterLink>
-          <FooterLink to="sobre" className="nav-link">
-            Sobre
-          </FooterLink>
-          <FooterLink to="atuacao" className="nav-link">
-            Atuação
-          </FooterLink>
-          <FooterLink to="cases" className="nav-link">
-            Cases
-          </FooterLink>
-          <FooterLink to="/contato" className="nav-link">
-            Contato
-          </FooterLink>
+          {navItems.map((item) => {
+            return (
+              <FooterLink
+                key={item.id}
+                data-id={item.id}
+                onClick={onLinkClick}
+                to={item.title}
+                smooth={true}
+              >
+                {item.title}
+              </FooterLink>
+            );
+          })}
         </FooterNav>
         <FooterSocials>
           <IconContext.Provider value={{ color: '#fff', size: '3rem' }}>
@@ -57,6 +88,15 @@ const Footer = () => {
           </IconContext.Provider>
         </FooterSocials>
       </FooterContainer>
+      <FooterCopyright>
+        <p>
+          Copyright © 2022{' '}
+          <a href="https://www.linkedin.com/in/diogo-tadeu/" target="_blank">
+            Diogo Luxa
+          </a>
+          . Todos os direitos reservados.
+        </p>
+      </FooterCopyright>
     </FooterStyled>
   );
 };

@@ -20,8 +20,14 @@ import {
 // import logo from './../../assets/images/logo.png';
 
 const Navbar = () => {
-  const { isOpen, setIsOpen, onPageScroll, setOnPageScroll } =
-    useContext(StateContext);
+  const {
+    isOpen,
+    setIsOpen,
+    onPageScroll,
+    setOnPageScroll,
+    navItems,
+    setNavItems,
+  } = useContext(StateContext);
 
   window.addEventListener('scroll', () => {
     if (window.scrollY >= 100) {
@@ -31,10 +37,43 @@ const Navbar = () => {
     }
   });
 
+  const onLinkClick = (e) => {
+    const dataId = parseInt(e.target.getAttribute('data-id'));
+    if (dataId >= 0) {
+      setNavItems((prev) => {
+        const newState = prev.map((item) => {
+          if (item.id === dataId) {
+            return { ...item, active: true };
+          } else {
+            return { ...item, active: false };
+          }
+        });
+        return newState;
+      });
+    } else {
+      setNavItems((prev) => {
+        const newState = prev.map((item) => {
+          if (item.title === 'home') {
+            return { ...item, active: true };
+          } else {
+            return { ...item, active: false };
+          }
+        });
+        return newState;
+      });
+    }
+  };
+
   return (
     <NavbarStyled onPageScroll={onPageScroll}>
       <NavContainer>
-        <NavLogo to="home" onPageScroll={onPageScroll}>
+        <NavLogo
+          data-id="-1"
+          to="home"
+          smooth={true}
+          onPageScroll={onPageScroll}
+          onClick={onLinkClick}
+        >
           Blessed
           {/* <NavLogoImg img={logo}></NavLogoImg> */}
         </NavLogo>
@@ -56,31 +95,22 @@ const Navbar = () => {
           />
         </Burger>
         <NavMenu>
-          <NavItem>
-            <NavLink to="home" className="active" onPageScroll={onPageScroll}>
-              Home
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="sobre" onPageScroll={onPageScroll}>
-              Sobre
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="atuacao" onPageScroll={onPageScroll}>
-              Atuação
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="cases" onPageScroll={onPageScroll}>
-              Cases
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="contato" onPageScroll={onPageScroll}>
-              Contato
-            </NavLink>
-          </NavItem>
+          {navItems.map((item) => {
+            return (
+              <NavItem key={item.id}>
+                <NavLink
+                  data-id={item.id}
+                  onClick={onLinkClick}
+                  to={item.title}
+                  smooth={true}
+                  className={item.active ? 'active' : null}
+                  onPageScroll={onPageScroll}
+                >
+                  {item.title}
+                </NavLink>
+              </NavItem>
+            );
+          })}
         </NavMenu>
       </NavContainer>
     </NavbarStyled>

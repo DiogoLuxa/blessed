@@ -18,7 +18,7 @@ import games from '../../assets/images/games.svg';
 
 const Atuacao = () => {
   return (
-    <AtuacaoStyled id="atuacao">
+    <AtuacaoStyled id="atuação">
       <AtuacaoContainer>
         <AtuacaoFirstColumn>
           <h1>Áreas de Atuação</h1>

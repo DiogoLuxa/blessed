@@ -120,6 +120,7 @@ export const NavItem = styled.li``;
 export const NavLink = styled(LinkS)`
   cursor: pointer;
   height: 80px;
+  text-transform: capitalize;
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -132,6 +133,7 @@ export const NavLink = styled(LinkS)`
     }
   }}
 
+  transition: all .2s ease-in-out;
   &.active {
     border-bottom: 5px solid var(--platinum);
 
