@@ -110,6 +110,7 @@ export const Line = styled.div`
 export const NavMenu = styled.ul`
   display: flex;
   gap: 3rem;
+
   @media screen and (max-width: 768px) {
     display: none;
   }

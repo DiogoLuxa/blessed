@@ -99,11 +99,15 @@ const Navbar = () => {
             return (
               <NavItem key={item.id}>
                 <NavLink
+                  activeClass="active"
+                  spy={true}
+                  offset={-70}
                   data-id={item.id}
                   onClick={onLinkClick}
                   to={item.title}
                   smooth={true}
-                  className={item.active ? 'active' : null}
+                  // className="active"
+                  // className={item.active ? 'active' : null}
                   onPageScroll={onPageScroll}
                 >
                   {item.title}
